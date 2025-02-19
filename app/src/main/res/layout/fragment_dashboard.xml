@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="60dp"
-    tools:context=".ui.dashboard.DashboardFragment">
+    android:paddingHorizontal="60dp">
 
     <ScrollView
         android:layout_width="match_parent"
