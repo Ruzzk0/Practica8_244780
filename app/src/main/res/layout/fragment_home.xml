@@ -5,22 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    tools:context=".ui.home.HomeFragment">
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/logobrain"
-    android:scaleType="fitCenter"
-    android:layout_marginTop="15dp"
-    />
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logobrain"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="15dp"/>
 
     <GridView
         android:id="@+id/reminders"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:numColumns="3"
-        android:layout_marginTop="15dp"
-        />
-
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:padding="8dp"
+        android:layout_marginBottom="15dp"/>
 </LinearLayout>
